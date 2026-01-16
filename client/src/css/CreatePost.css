@@ -1,0 +1,143 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f4ec;
+}
+/* Wrapper to center the form without full screen stretch */
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color: #f6f8fa; */
+}
+
+/* Form container */
+.create-post-container {
+  width: 600px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.create-post-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.create-post-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  transition: border 0.3s ease;
+}
+
+.post-input:focus,
+.post-textarea:focus {
+  border: 1px solid #28a745;
+  outline: none;
+}
+
+.post-textarea {
+  min-height: 180px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  overflow-y: auto;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 150px;
+  align-self: center;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* Info message */
+.formatting-info {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+/* Formatting Toolbar */
+.format-toolbar {
+  display: grid;
+  grid-template-columns: repeat(5, 40px); /* includes B, I, T, t, 🔗 */
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.format-toolbar button {
+  padding: 8px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.format-toolbar button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Text style classes */
+.large-text {
+  font-size: 1.5em;
+}
+
+.small-text {
+  font-size: 0.8em;
+}
+.posts-heading {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #222;
+  font-family: 'Georgia', serif;
+  position: relative;
+}
+
+.posts-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #28a745;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.highlight {
+  color: #28a745;
+}
+
+
+

@@ -1,0 +1,12 @@
+{
+  "name": "medium-clone",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node app.js",
+    "client": "cd client && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}

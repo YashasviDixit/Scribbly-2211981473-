@@ -1,0 +1,148 @@
+/* Posts.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font-family: "Inter", sans-serif;
+}
+
+/* Container */
+.posts-container {
+  padding: 40px 5%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.posts-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 40px;
+  color: #222;
+  font-family: 'Georgia', serif;
+}
+
+.highlight {
+  color: #28a745;
+}
+
+/* Grid System */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 25px;
+}
+
+/* Post Card */
+.post-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+
+.post-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Image Wrapper */
+.post-image-wrapper {
+  width: 100%;
+  height: 120px;   /* more compact */
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+
+
+.post-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.post-card:hover .post-image {
+  transform: scale(1.08);
+}
+
+/* Content Box */
+.post-content-box {
+  padding: 18px 20px;
+}
+
+/* Title */
+.post-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: #222;
+}
+
+/* Author */
+.post-author {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.post-author span {
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* Excerpt */
+.post-excerpt {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.55;
+}
+
+.no-posts {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  color: #777;
+}
+/* Align save + clap icons in a row */
+.post-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;              /* space between both icons */
+  margin-top: 15px;
+}
+
+/* Remove default button styling */
+.save-btn,
+.clap-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Clap image icon */
+.clap-icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* ✨ Clap Shake Animation */
+.shake {
+  animation: clapShake 0.4s ease;
+}
+
+@keyframes clapShake {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.3) rotate(-8deg); }
+  50%  { transform: scale(1.1) rotate(8deg); }
+  75%  { transform: scale(1.2) rotate(-5deg); }
+  100% { transform: scale(1); }
+}

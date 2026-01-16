@@ -1,0 +1,92 @@
+/* Wrapper */
+.post-details-page {
+  max-width: 700px;
+  margin: 60px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Back Button */
+.back-btn {
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2e8b3f; 
+  color: white;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  opacity: 0.9;
+}
+
+/* Title */
+.post-title {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Author */
+.post-author {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Save / Bookmark Button */
+
+
+.save-btn svg {
+  vertical-align: middle;
+}
+
+/* Post Image */
+.post-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Post Content */
+.post-content {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Top row: Back + Save buttons side by side */
+.top-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between buttons */
+  margin-bottom: 20px;
+}
+
+.clap-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;           /* reduce gap */
+  background: white;
+  border: 1.5px solid #ddd;
+  padding: 4px 8px;   /* reduce padding */
+  border-radius: 6px; /* slightly smaller border radius */
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.clap-btn:hover {
+  background: #f3f3f3;
+}
+
+.clap-icon {
+  width: 18px;        /* smaller icon */
+  height: 18px;
+}
